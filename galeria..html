@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria da Família</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .card {
+            text-align: center;
+            width: 150px;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .card a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria da Família Soncini</h1>
+    <div class="galeria">
+        {% for membro in membros %}
+        <div class="card">
+            <a href="/pessoa/{{ membro.id }}">
+                <img src="{{ membro.foto }}" alt="{{ membro.nome }}">
+                <p>{{ membro.nome }}</p>
+            </a>
+        </div>
+        {% endfor %}
+        <a href="/">Voltar inicio</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pessoa.nome }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+        .container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ pessoa.foto }}" alt="{{ pessoa.nome }}">
+        <h1>{{ pessoa.nome }}</h1>
+        <div class="info">
+            <p><strong>Profissão:</strong> {{ pessoa.profissao }}</p>
+            <p>{{ pessoa.texto }}</p>
+        </div>
+    </div>
+    
+</body>
+<a href="/">Voltar inicio</a>
+</html>

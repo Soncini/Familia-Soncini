@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    
+    <h1>Bem-vindo ao site da Família Soncini</h1>
+    <nav>
+        <a href="/">Voltar inicio</a>   |
+        <a href="/historia">História</a> |
+        <a href="/arvore_genealogica">arvore_genealogica</a> |
+        <a href="/contato">Contato</a>
+        
+       
+    </nav>
+</body>
+<h1>Pessoas</h1>
+    <div id="people">
+        {% for pessoa in pessoas %}
+            <div class="person" onclick="window.location.href='/pessoa/{{ pessoa.id }}'">
+                <img src="{{ url_for('static', filename='images/' + pessoa.foto) }}" alt="{{ pessoa.nome }}">
+                <p>{{ pessoa.nome }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</html>

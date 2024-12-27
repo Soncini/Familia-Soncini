@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Família Soncini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .section {
+            margin: 20px;
+        }
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .level {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        .node {
+            background-color: #80CFFF;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+            font-weight: bold;
+            min-width: 100px;
+        }
+        .line {
+            width: 2px;
+            background-color: #000;
+            height: 50px;
+            margin-top: -5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            text-align: center;
+            width: 150px;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Família Soncini</h1>
+    <div class="nav-links">
+        <a href="/">Voltar inicio</a>
+        <a href="/historia">História</a>
+        <a href="/familia_soncini">Família Soncini</a>
+        <a href="/contato">Contato</a>
+    </div>
+    
+    <!-- Seção de História -->
+    <div class="section">
+        <h2>História da Família Soncini</h2>
+        <p>A família Soncini tem uma história rica e vibrante, com suas raízes traçadas até Domenico Fortunato Soncini...</p>
+    </div>
+
+    <!-- Árvore Genealógica -->
+    <div class="section">
+        <h2>Árvore Genealógica</h2>
+        <div class="tree">
+            <div class="level">
+                <div class="node">Domenico Fortunato Soncini</div>
+            </div>
+            <div class="line"></div>
+            <div class="level">
+                <div class="node">Filhos de Domenico Fortunato Soncini</div>
+            </div>
+            <div class="level">
+                <div class="node">Liborio Soncini</div>
+              
+            </div>
+            <div class="line"></div>
+            <div class="level">
+                <div class="node">Ciro Soncini</div>
+                <div class="node">Lauro Soncini</div>
+                <div class="node">Silvio Soncini</div>
+                <div class="node">Lino Soncini</div>                
+            </div>
+            <div class="level">
+                <div class="node">Marcio Soncini</div>
+                <div class="node">Luciano Soncini</div>
+                <div class="node">Sandra Soncini</div>
+                <div class="node">Gilbran Soncini Da Rosa</div>
+                <div class="node">Lauro Soncini Junior</div>
+                <div class="node">Mariana Soncini</div>
+                <div class="node">Lino Soncini Junior</div>
+                <div class="node">Isabela Soncini Da Costa Lerina</div>
+            </div>
+            <div class="level">
+                <div class="node">Ana Silveira Soncini</div>
+                <div class="node">Felipe Silveira Soncini</div>
+                <div class="node">Alessi Eduardo Brancher Soncini</div>
+                <div class="node">Mariana Soncini Lerina Kuerten</div>
+                <div class="node">Marina Dutra Soncini</div>
+                <div class="node">Lia Soncini Lerina</div>
+                <div class="node">Bruno Da Silva Soncini</div>
+                <div class="node">Vanessa Cristina Soncini Radtke</div>
+                <div class="node">Maria Aparecida Brigido Soncini</div>
+                <div class="node">Aline Soncini</div>
+                <div class="node">Luisa Soncini Radtke</div>
+                <div class="node">Luíza Soncini Da Costa Lerina</div>
+                <div class="node">Maria Lucia Soncini Da Silva</div>
+                <div class="node">Libório Soncini</div>
+                <div class="node">Claudio Soncini</div>
+                <div class="node">Gabriela Gomes Soncini</div>
+                <div class="node">Giulia Heineck De Vasconcelos Soncin</div>
+                <div class="node">Thaise Cristina Brancher Soncini</div>
+                <div class="node">George Ronald Soncini Da Rosa</div>
+                <div class="node">Cristina Silveira Soncini Buratto</div>
+                <div class="node">Juliana Da Silva Soncini Mund</div>
+                <div class="node">Sérgio Soncini</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeria de Fotos -->
+    <div class="section">
+        <h2>Galeria da Família</h2>
+        <div class="gallery">
+            <!-- Adicione membros da família aqui -->
+            <div class="card">
+                <img src="/static/images/marcio_soncini.jpg" alt="Marcio Soncini">
+                <p>Marcio Soncini</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/luciano_soncini.jpg" alt="Luciano Soncini">
+                <p>Luciano Soncini</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/sandra_soncini.jpg" alt="Sandra Soncini">
+                <p>Sandra Soncini</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/gilbran_soncini.jpg" alt="Gilbran Soncini Da Rosa">
+                <p>Gilbran Soncini Da Rosa</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/lauro_soncini.jpg" alt="Lauro Soncini Junior">
+                <p>Lauro Soncini Junior</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/mariana_soncini.jpg" alt="Mariana Soncini">
+                <p>Mariana Soncini</p>
+            </div>
+            <!-- Continue adicionando outros membros -->
+        </div>
+    </div>
+    <div id="people">
+        {% for pessoa in pessoas %}
+            <div class="person" onclick="window.location.href='/pessoa/{{ pessoa.id }}'">
+                <img src="{{ url_for('static', filename='images/' + pessoa.foto) }}" alt="{{ pessoa.nome }}">
+                <p>{{ pessoa.nome }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
