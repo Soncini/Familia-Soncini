@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+{% extends "base.html" %}
+{% block title %}Árvore Genealógica da Família Soncini{% endblock %}
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Árvore Genealógica da Família Soncini</title>
+   
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -103,10 +106,7 @@
             <div class="node">Sérgio Soncini</div>
         </div>
     </div>
-    <nav>
-        <a href="/">Voltar inicio</a>
-        <a href="/historia">História</a> |
-        <a href="/contato">Contato</a>
-    </nav>
+   
 </body>
 </html>
+{% endblock %}
