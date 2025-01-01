@@ -1,7 +1,7 @@
 # Exported from Render on 2024-12-28T00:30:51Z
 services:
 - type: web
-  name: Familia-Soncini2025
+  name: Familia-Soncini
   runtime: python
   repo: https://github.com/Soncini/Familia-Soncini
   plan: free
